@@ -5,7 +5,5 @@ uint8 brake 0
 uint8 steer_left 0
 uint8 steer_right 0
 uint8 fnr 0
-float32 boom_up_duty 0.0
-float32 boom_dn_duty 0.0
-float32 bucket_in_duty 0.0
-float32 bucket_out_duty 0.0
+float32 dump_up_duty 0.0
+float32 dump_dn_duty 0.0

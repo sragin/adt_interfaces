@@ -1,8 +1,4 @@
-int16 boom_dn_current
-int16 boom_up_current
-int16 bucket_in_current
-int16 bucket_out_current
-float32 boom_dn_c_p
-float32 boom_up_c_p
-float32 bucket_in_c_p
-float32 bucket_out_c_p
+float32 left_duty_fb
+float32 right_duty_fb
+float32 steer_left_cp
+float32 steer_right_cp
