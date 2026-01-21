@@ -1,3 +1,4 @@
+uint8 sol_fb
 float32 left_duty_fb
 float32 right_duty_fb
 float32 steer_left_cp
