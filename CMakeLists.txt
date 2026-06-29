@@ -19,6 +19,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/DumpControl.msg"
   "msg/DriveControl.msg"
   "msg/DanfossFB.msg"
+  "msg/TreezeStatus.msg"
   DEPENDENCIES std_msgs
 )
 
