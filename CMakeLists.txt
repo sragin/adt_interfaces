@@ -14,7 +14,7 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/AnmControl.msg"
+  "msg/AvcControl.msg"
   "msg/RemoteControl.msg"
   "msg/DumpControl.msg"
   "msg/DriveControl.msg"
