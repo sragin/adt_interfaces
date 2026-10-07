@@ -21,6 +21,9 @@ DumpControl dump_cmd
 DanfossFB danfoss
 TreezeStatus treeze
 
+# navigator 의 E-Stop 판정 근거(지금 성립 중인 조건 / 마지막 진입 원인)
+EstopReason estop
+
 # 리모콘 스위치 / 무선 비상정지
 bool remote_power_on
 bool remote_estop_sw
@@ -40,3 +43,4 @@ float32 age_danfoss
 float32 age_treeze
 float32 age_remote
 float32 age_estop_wireless
+float32 age_estop

@@ -12,6 +12,7 @@ find_package(ament_cmake REQUIRED)
 # find_package(<dependency> REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(builtin_interfaces REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/AvcControl.msg"
@@ -21,8 +22,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/DanfossFB.msg"
   "msg/TreezeStatus.msg"
   "msg/AvcResponse.msg"
+  "msg/EstopReason.msg"
   "msg/VehicleStatus.msg"
-  DEPENDENCIES std_msgs
+  DEPENDENCIES std_msgs builtin_interfaces
 )
 
 if(BUILD_TESTING)
