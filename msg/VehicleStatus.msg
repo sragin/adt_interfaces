@@ -28,7 +28,8 @@ EstopReason estop
 VehicleGauge gauge
 
 # 리모콘 스위치 / 무선 비상정지
-bool remote_power_on
+bool remote_power_on      # 송신기 전원(PowerON). 꺼짐/슬립이면 false
+bool remote_connected     # 송신기↔수신기 링크(S26). 수신기는 송신기가 꺼져도 프레임을 보낸다
 bool remote_estop_sw
 bool remote_mode_run_sw
 bool remote_mode_manual_sw

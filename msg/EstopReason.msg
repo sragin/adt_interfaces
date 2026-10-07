@@ -8,7 +8,9 @@ string AVC_CMD="avc_cmd"                      # AVC ESTOP_CMD(auto 모드) 또�
 string TREEZE_CRITICAL="treeze_critical"      # 트리즈 치명 에러(treeze.error_code 참조)
 string TREEZE_COMM_LOST="treeze_comm_lost"    # 트리즈 상태 미수신(Deadline)
 string DANFOSS_COMM_LOST="danfoss_comm_lost"  # 댄포스 피드백 미수신(Deadline) → 조향 불가
-string REMOTE_POWER_OFF="remote_power_off"    # remote 모드에서 리모콘 전원 OFF
+string REMOTE_POWER_OFF="remote_power_off"    # remote 모드에서 리모콘(송신기) 전원 OFF/슬립 (PowerON=0)
+string REMOTE_LINK_LOST="remote_link_lost"    # remote 모드에서 송신기↔수신기 링크 끊김 (S26=0)
+string REMOTE_COMM_LOST="remote_comm_lost"    # remote 모드에서 수신기 프레임 미수신(Deadline)
 
 string state                                  # 현재 상태머신 상태
 string[] active
