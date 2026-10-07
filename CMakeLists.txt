@@ -23,6 +23,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/TreezeStatus.msg"
   "msg/AvcResponse.msg"
   "msg/EstopReason.msg"
+  "msg/VehicleGauge.msg"
   "msg/VehicleStatus.msg"
   DEPENDENCIES std_msgs builtin_interfaces
 )

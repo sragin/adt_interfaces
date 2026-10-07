@@ -24,6 +24,9 @@ TreezeStatus treeze
 # navigator 의 E-Stop 판정 근거(지금 성립 중인 조건 / 마지막 진입 원인)
 EstopReason estop
 
+# 차량 CAN 계기 데이터(냉각수/작동유 온도, 연료/요소수 잔량). 255 는 무효
+VehicleGauge gauge
+
 # 리모콘 스위치 / 무선 비상정지
 bool remote_power_on
 bool remote_estop_sw
@@ -44,3 +47,4 @@ float32 age_treeze
 float32 age_remote
 float32 age_estop_wireless
 float32 age_estop
+float32 age_gauge
