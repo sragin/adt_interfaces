@@ -27,6 +27,11 @@ EstopReason estop
 # 차량 CAN 계기 데이터(냉각수/작동유 온도, 연료/요소수 잔량). 255 는 무효
 VehicleGauge gauge
 
+# 정밀 차속(km/h, + 전진 / - 후진). 변속기 ETC1 출력축 회전수 × 환산상수, 부호는 ETC2 현재 기어.
+# 분해능 약 0.016 km/h, 100 Hz 원천. AVC 로 보내는 정수 차속(avc_response.vehicle_speed)과 별개.
+# 수신 이력이 없으면 0 이고 age_speed_precise 가 -1 이다.
+float32 vehicle_speed_precise
+
 # 리모콘 스위치 / 무선 비상정지
 bool remote_power_on      # 송신기 전원(PowerON). 꺼짐/슬립이면 false
 bool remote_connected     # 송신기↔수신기 링크(S26). 수신기는 송신기가 꺼져도 프레임을 보낸다
@@ -49,3 +54,4 @@ float32 age_remote
 float32 age_estop_wireless
 float32 age_estop
 float32 age_gauge
+float32 age_speed_precise
